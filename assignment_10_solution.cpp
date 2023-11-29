@@ -15,12 +15,12 @@ void firstFit(int blockSize[], int m, int processSize[], int n){
     }
     cout<<"Process ID"<<"\tProcess Size"<<"\tMemory allocated\n";
     for(int i=0;i<n;i++){
-        cout<<i<<"\t\t"<<processSize[i];
+        cout<<i<<"\t\t\t"<<processSize[i];
         if(allocation[i]==0){
-            cout<<"\t\t"<<"Not Allocated\n";
+            cout<<"\t\t\t"<<"Not Allocated\n";
         }
         else{
-            cout<<"\t\t"<<allocation[i]<<"\n";
+            cout<<"\t\t\t"<<allocation[i]<<"\n";
         }
     }
 }
